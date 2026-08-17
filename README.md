@@ -3,9 +3,9 @@ Live link: https://hollywoodworkshop.page.gd/
 ## Project Overview
 
 **Hollywood Car Workshop** is a PHP + MySQL web application for booking car workshop appointments.  
-Clients can choose a desired mechanic based on availability for a selected date. The system enforces business rules such as **no duplicate booking (same license + same date)** and **maximum 4 appointments per mechanic per day**.
+Clients can choose a desired mechanic based on availability for a selected date. The system enforces business rules such as **no duplicate bookings (same license + same date)** and **maximum 4 appointments per mechanic per day**.
 
-Built for **CSE 391: Programming for the Internet — Assignment 3** using:
+Built using:
 
 - HTML, CSS, JavaScript (AJAX)
 - PHP (server-side validation + prepared statements)
