@@ -11,9 +11,12 @@ if (!empty($_SESSION['admin_logged_in'])) {
 
 $error = "";
 
-// Change these two (quick setup)
-$ADMIN_USERNAME = "admin";
-$ADMIN_PASSWORD = "hollywood123"; 
+// Admin credentials live in admin/config.php (not committed). Copy config.example.php to start.
+$configFile = __DIR__ . "/config.php";
+if (!file_exists($configFile)) {
+    die("Admin login is not configured. Copy admin/config.example.php to admin/config.php and set a password.");
+}
+require $configFile;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = trim($_POST["username"] ?? "");

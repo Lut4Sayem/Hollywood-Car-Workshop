@@ -15,6 +15,10 @@ Built using:
 
 Run the included `setup.sql` file in phpMyAdmin or MySQL to create the database and tables.
 
+### Admin Login Setup
+
+Copy `admin/config.example.php` to `admin/config.php` and set your admin username and password. `config.php` is git-ignored, so your password never ends up on GitHub.
+
 ---
 
 ## Features
